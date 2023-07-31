@@ -1,0 +1,31 @@
+.type-your-email {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 2.5rem;
+    font-size: 1.2rem;
+    color: #fff7;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.type-your-email label {
+    display: none;
+}
+
+.type-your-email ::placeholder {
+    color: #fff7;
+    font-style: italic;
+}
+
+
+.type-your-email input {
+    width: 95%;
+    padding: 0.5em 0.1em;
+    line-height: 1.3em;
+    color: black;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.1rem solid #fff7;
+}

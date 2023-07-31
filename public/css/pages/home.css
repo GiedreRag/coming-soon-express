@@ -1,0 +1,145 @@
+/* ateina is base */
+@import '../base/base.css';
+@import '../base/layout.css';
+
+/* is 3rd-party */
+@import '../3rd-party/font-awesome.min.css';
+
+/* is components */
+@import '../components/button.css';
+@import '../components/clock.css';
+@import '../components/form.css';
+@import '../components/mouse.css';
+@import '../components/progress-bar.css';
+@import '../components/type-your-email.css';
+
+/* is CUSTOM STYLE BELOW THIS COMMENT LINE */
+.hero {
+    background-image: url(../../img/background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.logo {
+    width: 3rem;
+}
+
+.main-title {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.main-description {
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+footer.container {
+    padding-top: 0;
+}
+
+footer .row {
+    position: relative;
+}
+
+footer .row > .btn {
+    position: absolute;
+    top: -1.5rem;
+    right: -1.5rem;
+}
+
+.socials {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    border-bottom: 0.1rem solid #fffb;
+    font-size: 1.3rem;
+    padding: 0.5em 0;
+    margin-bottom: 2.5rem;
+}
+
+.socials > a {
+    height: 2.5em;
+    width: 2.5em;
+    line-height: 2.5em;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: color 5s, background-color 5s;
+}
+
+.socials > a:hover {
+    background-color: white;
+    color: var(--main-color);
+    transition: all 1s;
+}
+
+footer.container > .row-short {
+    gap: 0;
+    color: #fffb;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+footer > .row-short a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-logo {
+    height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.text-trio > p {
+    position: relative;
+}
+
+.text-trio > p::after {
+    content: '';
+    display: none;
+    width: 0.1rem;
+    height: 1rem;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    right: -0.9rem;
+    transform: translateY(-50%);
+}
+
+.text-trio > p:last-child::after {
+    display: none;
+}
+
+@media (min-width: 44rem) {
+    .text-trio {
+        display: flex;
+        gap: 1.7rem;
+    } 
+
+    .text-trio > p::after {
+        display: block;
+    }
+}
+
+@media (max-width: 450px) {
+    .btn.btn-circle {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 22rem) {
+    .main-title {
+        font-size: 3.5rem;
+    }
+}
